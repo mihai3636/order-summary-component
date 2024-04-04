@@ -1,10 +1,24 @@
-:root {
-  --cl-primary: #3829e0;
-  --cl-primary-tint: #e0e8ff;
+@use "./utils" as *;
 
-  --cl-neutral: #7280a7;
+:root {
+  --cl-primary: rgb(56, 41, 224);
+  --cl-primary-transparent: rgb(56, 41, 224, 0.5);
+  --cl-primary-tint: #e0e8ff;
+  // --cl-primary-tint-transparent: rgb(224, 232, 255, 0.5);
+  --cl-neutral-transparent: rgb(114, 128, 167, 0.1);
+
+  --cl-neutral: rgb(114, 128, 167);
+  --cl-neutral-transparent: rgb(114, 128, 167, 0.07);
   --cl-neutral-tint: #f5f7ff;
   --cl-neutral-shade: #1f2f56;
 
-  --fs-normal: #{toRem(32px)};
+  --fs-normal: #{toRem(16px)};
+  --fs-title: #{toRem(30px)};
+  --fs-subtitle: #{toRem(16px)};
+
+  --fw-normal: 500;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  --font-family: "Red Hat Display";
 }
