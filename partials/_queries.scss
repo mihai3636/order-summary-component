@@ -1,0 +1,46 @@
+@use "./utils" as *;
+
+@media (max-width: toRem(460px)) {
+  .order-info {
+    padding: toRem(32px);
+  }
+
+  .plan-info {
+    margin-left: toRem(12px);
+  }
+}
+
+@media (max-width: toRem(380px)) {
+  .plan-box {
+    padding: toRem(12px);
+  }
+}
+
+@media (max-width: toRem(340px)) {
+  :root {
+    --fs-normal: #{toRem(14px)};
+    --fs-title: #{toRem(24px)};
+    --fs-subtitle: #{toRem(14px)};
+  }
+  .plan-box {
+    padding: toRem(8px);
+  }
+  .order-info {
+    padding: toRem(16px);
+  }
+
+  @media (max-width: toRem(280px)) {
+    .plan-box {
+      flex-direction: column;
+      gap: toRem(12px);
+    }
+
+    .plan-info {
+      margin: 0;
+    }
+
+    .plan-change {
+      margin: 0;
+    }
+  }
+}
